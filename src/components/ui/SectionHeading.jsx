@@ -2,7 +2,7 @@ import FadeIn from './FadeIn';
 
 export default function SectionHeading({ eyebrow, title, subtitle, center = false }) {
   return (
-    <FadeIn className={`mb-12 ${center ? "text-center" : ""}`}>
+    <FadeIn className={`mb-8 ${center ? "text-center" : ""}`}>
       {eyebrow && (
         <div className={`mb-3 flex items-center gap-2 ${center ? "justify-center" : ""}`}>
           <span className="h-px w-6 bg-accent" aria-hidden="true" />

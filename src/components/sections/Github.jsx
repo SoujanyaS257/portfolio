@@ -6,7 +6,7 @@ import { socials } from '../../data/socials';
 
 export default function Github() {
   return (
-    <section id="github" className="scroll-mt-20 bg-white py-20 md:py-28">
+    <section id="github" className="scroll-mt-20 bg-white py-14 md:py-20">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading eyebrow="Code" title="GitHub & Coding Practice" />
         <FadeIn>

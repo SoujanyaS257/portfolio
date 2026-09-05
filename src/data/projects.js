@@ -1,9 +1,33 @@
 export const projects = [
   {
+    id: "smart-cattle-monitoring",
+    name: "Smart Cattle Monitoring",
+    status: "Completed",
+    featured: true,
+    description:
+      "An IoT-based cattle management system that helps farmers monitor animal identification, health, and location — replacing manual observation and record-keeping with continuous, automated tracking.",
+    technologies: ["ESP32", "RFID", "DS18B20", "RF Modules", "Flask", "MongoDB", "IoT"],
+    achievements: [],
+    features: [
+      "Alerts for abnormal body temperature",
+      "Vaccination reminder alerts",
+      "Estrus-related event alerts",
+      "Boundary/movement monitoring alerts",
+    ],
+    details: {
+      problem:
+        "Traditional cattle monitoring relies on manual observation and record-keeping, making it difficult to continuously track animal health, vaccination status, breeding information, and location.",
+      solution:
+        "Uses an ESP32 as the processing core with RFID tags for animal identification, DS18B20 sensors for body-temperature monitoring, and RF modules for boundary/location monitoring. A Flask backend processes data, which is stored in MongoDB — covering animal profiles, health history, vaccination information, breeding timeline, temperature, and location.",
+    },
+    github: null, // TODO: add GitHub repository link
+    demo: null,
+  },
+  {
     id: "scamshield-ai",
     name: "ScamShield AI",
     status: "Ongoing",
-    featured: true,
+    featured: false,
     description:
       "An AI-powered scam and fraud detection system designed to analyze different types of potentially fraudulent content and classify it as Safe, Suspicious, or Fraud.",
     inputs: ["SMS", "Email", "URLs", "Images", "QR Codes", "Voice Recordings"],
@@ -39,29 +63,6 @@ export const projects = [
     features: ["Text-to-speech output for accessibility"],
     github: "https://github.com/SoujanyaS257/Real-Time-Object-Detection", // TODO: add GitHub repository link
     demo: null,
-  },
-  {
-    id: "smart-cattle-monitoring",
-    name: "Smart Cattle Monitoring",
-    status: "Completed",
-    featured: false,
-    description:
-      "An IoT-based cattle management system that helps farmers monitor animal identification, health, and location — replacing manual observation and record-keeping with continuous, automated tracking.",
-    technologies: ["ESP32", "RFID", "DS18B20", "RF Modules", "Flask", "MongoDB", "IoT"],
-    achievements: [],
-    features: [
-      "Alerts for abnormal body temperature",
-      "Vaccination reminder alerts",
-      "Estrus-related event alerts",
-      "Boundary/movement monitoring alerts",
-    ],
-    details: {
-      problem:
-        "Traditional cattle monitoring relies on manual observation and record-keeping, making it difficult to continuously track animal health, vaccination status, breeding information, and location.",
-      solution:
-        "Uses an ESP32 as the processing core with RFID tags for animal identification, DS18B20 sensors for body-temperature monitoring, and RF modules for boundary/location monitoring. A Flask backend processes data, which is stored in MongoDB — covering animal profiles, health history, vaccination information, breeding timeline, temperature, and location.",
-    },
-    github: null, // TODO: add GitHub repository link
-    demo: null,
-  },
+  }
+  
 ];

@@ -5,7 +5,7 @@ import FadeIn from '../ui/FadeIn';
 
 export default function Projects() {
   return (
-    <section id="projects" className="scroll-mt-20 bg-white py-20 md:py-28">
+    <section id="projects" className="scroll-mt-20 bg-white py-14 md:py-20">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="Work"

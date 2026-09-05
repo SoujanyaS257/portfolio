@@ -24,7 +24,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="scroll-mt-20 bg-surface py-20 md:py-28">
+    <section id="contact" className="scroll-mt-20 bg-surface py-14 md:py-20">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="Contact"

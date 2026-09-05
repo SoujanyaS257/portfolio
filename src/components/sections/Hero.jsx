@@ -5,7 +5,7 @@ import { socials } from '../../data/socials';
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative scroll-mt-20 flex min-h-[92vh] items-center overflow-hidden bg-white pb-16 pt-24">
+    <section id="hero" className="relative scroll-mt-20 flex min-h-[92vh] items-center overflow-hidden bg-white pb-12 pt-20">
       <div
         className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_left,_rgba(37,99,235,0.07),_transparent_55%)]"
         aria-hidden="true"

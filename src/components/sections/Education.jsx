@@ -5,7 +5,7 @@ import FadeIn from '../ui/FadeIn';
 
 export default function Education() {
   return (
-    <section id="education" className="scroll-mt-20 bg-surface py-20 md:py-28">
+    <section id="education" className="scroll-mt-20 bg-surface py-14 md:py-20">
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading eyebrow="Education" title="Education" />
         <div className="relative border-l-2 border-line pl-8">

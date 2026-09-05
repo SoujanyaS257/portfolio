@@ -14,7 +14,27 @@ const links = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  
+  // ADD THIS — new function inside the Navbar component
+  const scrollToSection = (hash) => (e) => {
+    e.preventDefault();
+    const wasOpen = open;
+    setOpen(false);
 
+    const target = document.querySelector(hash);
+    if (!target) return;
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Wait for the mobile menu's collapse animation to finish first,
+    // so the sticky header's height is stable before we scroll.
+    window.setTimeout(
+      () => {
+        target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
+      },
+      wasOpen ? 250 : 0
+    );
+  };
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
     window.addEventListener('scroll', onScroll);
@@ -40,6 +60,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
+              onClick={scrollToSection(link.href)}
               className="text-sm font-medium text-ink transition-colors hover:text-accent"
             >
               {link.label}
@@ -84,7 +105,7 @@ export default function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={() => setOpen(false)}
+                  onClick={scrollToSection(link.href)}
                   className="rounded-md px-3 py-2.5 text-sm font-medium text-ink hover:bg-surface"
                 >
                   {link.label}

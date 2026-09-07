@@ -51,3 +51,14 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: #94A3B8;
 }
+/* Add after existing ::selection block */
+body {
+  overflow-x: hidden;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.15) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
